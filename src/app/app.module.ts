@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FeedsComponent } from './feeds/feeds.component';
 import { HeaderComponent } from './header/header.component';
+import { ProvidersComponent } from './providers/providers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProvidersComponent
   ],
   imports: [
     BrowserModule,
