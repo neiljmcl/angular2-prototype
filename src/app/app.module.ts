@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FeedsComponent } from './feeds/feeds.component';
 import { HeaderComponent } from './header/header.component';
 import { ProvidersComponent } from './providers/providers.component';
+import { ProviderComponent } from './providers/provider/provider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedsComponent,
     HeaderComponent,
-    ProvidersComponent
+    ProvidersComponent,
+    ProviderComponent
   ],
   imports: [
     BrowserModule,
