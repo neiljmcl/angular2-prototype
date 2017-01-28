@@ -18,7 +18,7 @@ export class DFService {
             {
                 "name": "Azizi Media",
                 "providerId": "a94fb79de09f48f78c84fe67d390faf3",
-                "emailAddress": "shaun.storey@autotrader.co.uk;neil.mc@autotrader.co.uk;john.by@autotrader.co.uk",
+                "emailAddress": "neil.mc@autotrader.co.uk",
                 "status": "ENABLED",
                 "username": null,
                 "passwordHash": null

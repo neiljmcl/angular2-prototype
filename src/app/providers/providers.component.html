@@ -1,4 +1,6 @@
 <h2>Providers</h2>
-<li *ngFor="let provider of providers">
-  <ul><app-provider [provider]="provider"></app-provider></ul>
-</li>
+<div class="container-fluid">
+  <div *ngFor="let provider of providers" class="row">
+    <app-provider [provider]="provider"></app-provider>
+  </div>
+</div>
