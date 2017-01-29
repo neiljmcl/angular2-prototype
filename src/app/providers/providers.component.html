@@ -1,6 +1,11 @@
-<h2>Providers</h2>
-<div class="container-fluid">
-  <div *ngFor="let provider of providers" class="row">
-    <app-provider [provider]="provider"></app-provider>
+<div class="dfa-providers-view">
+  <h2 class="text-center">Providers</h2>
+  <button class="btn btn-primary" (click)="toggleAddProviderComponent()">Add Provider</button>
+  <dfa-add-provider [enabled]=false></dfa-add-provider>
+  <h3>Search Results</h3>
+  <div class="container-fluid">
+    <div *ngFor="let provider of providers" class="row">
+      <app-provider [provider]="provider"></app-provider>
+    </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, ViewChild} from '@angular/core';
+import {AddProviderComponent} from "../add-provider/add-provider.component";
 
 @Component({
   selector: 'app-provider',
@@ -10,6 +11,7 @@ export class ProviderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

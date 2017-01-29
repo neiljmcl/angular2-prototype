@@ -8,6 +8,7 @@ import { FeedsComponent } from './feeds/feeds.component';
 import { HeaderComponent } from './header/header.component';
 import { ProvidersComponent } from './providers/providers.component';
 import { ProviderComponent } from './providers/provider/provider.component';
+import { AddProviderComponent } from './providers/add-provider/add-provider.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProviderComponent } from './providers/provider/provider.component';
     FeedsComponent,
     HeaderComponent,
     ProvidersComponent,
-    ProviderComponent
+    ProviderComponent,
+    AddProviderComponent
   ],
   imports: [
     BrowserModule,
