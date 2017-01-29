@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-feeds',
+  selector: 'dfa-feeds',
   templateUrl: './feeds.component.html',
   styleUrls: ['./feeds.component.sass']
 })

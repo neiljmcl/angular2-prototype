@@ -3,7 +3,7 @@ import {Feed} from "./feed";
 import {Provider} from "./provider";
 
 @Injectable()
-export class DFService {
+export class DFAService {
     constructor() {}
     getFeeds(): Feed[] {
         return [

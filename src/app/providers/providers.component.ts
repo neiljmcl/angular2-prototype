@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Provider } from '../provider';
-import {DFService} from '../df15.service';
+import {DFAService} from '../dfa.service';
 
 @Component({
-  selector: 'app-providers',
+  selector: 'dfa-providers',
   templateUrl: './providers.component.html',
-  providers: [DFService],
+  providers: [DFAService],
   styleUrls: ['./providers.component.sass']
 })
 export class ProvidersComponent implements OnInit {
   providers: Provider[] = [];
-  constructor(private dfService: DFService) {}
+  constructor(private dfaService: DFAService) {}
 
   ngOnInit() {
-    this.providers = this.dfService.getProviders();
+    this.providers = this.dfaService.getProviders();
   }
 }

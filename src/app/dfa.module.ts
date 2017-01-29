@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { DFAComponent } from './dfa.component';
 import { FeedsComponent } from './feeds/feeds.component';
 import { HeaderComponent } from './header/header.component';
 import { ProvidersComponent } from './providers/providers.component';
@@ -11,7 +11,7 @@ import { ProviderComponent } from './providers/provider/provider.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    DFAComponent,
     FeedsComponent,
     HeaderComponent,
     ProvidersComponent,
@@ -23,6 +23,6 @@ import { ProviderComponent } from './providers/provider/provider.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [DFAComponent]
 })
 export class AppModule { }
