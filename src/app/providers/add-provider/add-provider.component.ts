@@ -6,11 +6,17 @@ import {Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./add-provider.component.sass']
 })
 export class AddProviderComponent implements OnInit {
-  @Input() enabled: boolean;
+  active: boolean;
   constructor() { }
 
   ngOnInit() {
-    this.enabled = false;
+    this.active = false;
+  }
+  activate() {
+    this.active = true;
+  }
+  deactivate() {
+    this.active = false;
   }
 
 }

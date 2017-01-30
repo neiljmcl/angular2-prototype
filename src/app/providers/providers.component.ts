@@ -18,10 +18,6 @@ export class ProvidersComponent implements OnInit {
     this.providers = this.dfaService.getProviders();
   }
   activateAddProviderComponent()  {
-    console.log("I heard something");
-    this.addProviderComponent.enabled = true;
-  }
-  toggleAddProviderComponent()  {
-    this.addProviderComponent.enabled = !this.addProviderComponent.enabled;
+    this.addProviderComponent.activate();
   }
 }
