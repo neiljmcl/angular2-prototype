@@ -1,4 +1,16 @@
-<div [hidden]="!active">
-    <h1>this is where we add a provider</h1>
-    <button class="btn btn-primary" (click)="deactivate()">cancel</button>
+<div [hidden]="!active" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Provider</h4>
+            </div>
+            <div class="modal-body">
+                <p>This is where we add a provider</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="deactivate()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="deactivate()">Add</button>
+            </div>
+        </div>
+    </div>
 </div>
