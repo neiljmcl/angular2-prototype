@@ -1,4 +1,5 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, ViewChild} from '@angular/core';
+import {DfaAlertComponent} from "../../alert/alert.component";
 
 @Component({
   selector: 'dfa-add-provider',
@@ -7,6 +8,7 @@ import {Component, OnInit, Input} from '@angular/core';
 })
 export class AddProviderComponent implements OnInit {
   active: boolean;
+  @ViewChild(DfaAlertComponent) dfaAlert: DfaAlertComponent;
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +19,9 @@ export class AddProviderComponent implements OnInit {
   }
   deactivate() {
     this.active = false;
+  }
+  addProvider() {
+    this.dfaAlert.activate();
   }
 
 }

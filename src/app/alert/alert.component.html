@@ -1,0 +1,4 @@
+<div [hidden]="!activated" class="alert alert-danger" role="alert">
+  <ng-content></ng-content>
+  <button class="btn btn-default" class="close" (click)="deactivate()">Dismiss</button>
+</div>

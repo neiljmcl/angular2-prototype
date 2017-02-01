@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProvidersComponent } from './providers/providers.component';
 import { ProviderComponent } from './providers/provider/provider.component';
 import { AddProviderComponent } from './providers/add-provider/add-provider.component';
+import { DfaAlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AddProviderComponent } from './providers/add-provider/add-provider.comp
     HeaderComponent,
     ProvidersComponent,
     ProviderComponent,
-    AddProviderComponent
+    AddProviderComponent,
+    DfaAlertComponent
   ],
   imports: [
     BrowserModule,
