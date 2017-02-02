@@ -1,4 +1,13 @@
-<div [hidden]="!activated" class="alert alert-danger" role="alert">
-  <ng-content></ng-content>
-  <button class="btn btn-default" class="close" (click)="deactivate()">Dismiss</button>
+<div [hidden]="!active" class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Alert</h4>
+    </div>
+    <div class="modal-body">
+      <div class="alert alert-danger" role="alert">
+        <ng-content></ng-content>
+        <button class="btn btn-default" class="close" (click)="deactivate()">Dismiss</button>
+      </div>
+    </div>
+  </div>
 </div>
