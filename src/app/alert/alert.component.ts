@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalComponent} from "../modal-component";
+import {Modal} from "../modal";
 
 @Component({
   selector: 'dfa-alert',
   templateUrl: 'alert.component.html',
   styleUrls: ['alert.component.sass']
 })
-export class DfaAlertComponent implements OnInit, ModalComponent {
+export class DfaAlertComponent implements OnInit, Modal {
   active: boolean;
   constructor() { }
 
